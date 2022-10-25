@@ -1,0 +1,66 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIO  [1,0] (*TON_2.Q*) (*Q*)  FB  [2,0] (*TON*) (*TON_0*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*timer30*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,4] (**) (**)  XIC  [1,0] (*TON_0.Q*) (*Q*)  FB  [2,0] (*TON*) (*TON_1*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*timer25*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,7] (**) (**)  XIC  [1,0] (*TON_1.Q*) (*Q*)  FB  [2,0] (*TON*) (*TON_2*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*timer5*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,10] (**) (**)  XIC  [1,0] (*TON_0.Redge*) (*Redg*)  FB  [2,0] (*TON*) (*TON_3*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*timer25*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,13] (**) (**)  XIC  [1,0] (*TON_0.Redge*) (*Redg*)  XIO  [2,0] (*TON_0.Q*) (*Q*)  OTE  [3,0] (*_IO_EM_DO_00*) (*redNS*)
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,15] (**) (**)  XIC  [1,0] (*TON_1.Redge*) (*Redg*)  XIO  [2,0] (*TON_1.Q*) (*Q*)  OTE  [3,0] (*_IO_EM_DO_01*) (*greenNS*)
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,17] (**) (**)  XIC  [1,0] (*TON_2.Redge*) (*Redg*)  XIO  [2,0] (*TON_2.Q*) (*Q*)  OTE  [3,0] (*_IO_EM_DO_02*) (*yellowNS*)
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,19] (**) (**)  XIC  [1,0] (*TON_3.Redge*) (*Redg*)  XIO  [2,0] (*TON_3.Q*) (*Q*)  OTE  [3,0] (*_IO_EM_DO_03*) (*greenEW*)
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,21] (**) (**)  XIC  [1,0] (*TON_3.Q*) (*Q*)  XIO  [2,0] (*TON_0.Q*) (*Q*)  OTE  [3,0] (*_IO_EM_DO_04*) (*yellowEW*)
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,23] (**) (**)  XIC  [1,0] (*TON_0.Q*) (*Q*)  OTE  [2,0] (*_IO_EM_DO_05*) (*redEW*)
+EOR [3,0]
+EOF
+#end_info
+END_PROGRAM
